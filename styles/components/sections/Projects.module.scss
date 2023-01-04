@@ -1,0 +1,102 @@
+@use "styles/breakpoints";
+
+.projects {
+  width: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  .content {
+    max-width: 90em;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+
+    ul {
+      list-style-type: none;
+    }
+
+    .project {
+      width: 100%; //TODO ??
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 3em;
+      margin-bottom: 10em;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      @include breakpoints.width(md) {
+        flex-direction: column;
+
+        &:nth-child(even) {
+          flex-direction: column;
+        }
+      }
+
+      &:first-child {
+        margin-top: 3em;
+      }
+
+      &:last-child {
+        margin-bottom: 2em;
+      }
+
+      .image-container {
+        flex: 1;
+
+        img {
+          width: 100%;
+          transition: transform 250ms;
+
+          &:hover {
+            transform: scale(1.02);
+          }
+        }
+      }
+
+      .info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+        .title {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 0.8em;
+        }
+
+        .description {
+          color: var(--text2);
+          font-size: 1rem;
+        }
+
+        .technologies {
+          font-family: var(--font-mono);
+
+          span {
+            font-size: 0.9rem;
+            margin-right: 1em;
+          }
+        }
+
+        .links {
+          display: flex;
+          vertical-align: middle;
+          align-items: center;
+
+          .github {
+            text-decoration: underline;
+            font-family: var(--font-mono);
+            color: var(--text2);
+            font-size: 1rem;
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
+}

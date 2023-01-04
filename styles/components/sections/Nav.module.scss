@@ -1,0 +1,48 @@
+@use "styles/breakpoints";
+
+.nav {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  transition: 0.4s;
+  height: var(--nav-height);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  //margin-right: 2em;
+  transition: 0.4s;
+  justify-content: right;
+  gap: 1.5em;
+  margin: 0 1em 0 1em;
+  //margin-right: 1em;
+
+  @include breakpoints.width(sm) {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  li {
+    background-color: var(--dark-bg2);
+    font-size: 0.9rem;
+    font-weight: 300;
+    //margin-left: 1.5em;
+    padding: 0.5em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    color: var(--text);
+
+    &:hover {
+        color: var(--accent);
+    }
+
+    .link-numbers {
+      font-family: var(--font-mono);
+      color: var(--text2);
+    }
+  }
+
+}

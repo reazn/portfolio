@@ -1,0 +1,91 @@
+@use "styles/breakpoints";
+
+.hero {
+  width: 100%;
+  max-width: 100em;
+  height: 100vh;
+  min-height: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+
+  .tag {
+    position: absolute;
+    color: var(--text-tag);
+    font-family: var(--font-cursive);
+    font-size: 1.2rem;
+  }
+
+  @include breakpoints.height(sm) {
+    padding-top: calc(var(--nav-height) + 1em);
+  }
+
+  @include breakpoints.width(md) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .left {
+    @include breakpoints.height(sm) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    @include breakpoints.width(md) {
+      width: 100%;
+      margin-top: 4em;
+    }
+
+    @include breakpoints.width(sm) {
+      margin-bottom: -2em;
+      margin-top: 4em;
+    }
+
+    .name {
+      color: var(--accent);
+      //Make variable
+      font-size: clamp(2rem, 4.2vw, 3.5rem);
+    }
+
+    .type-writer {
+      color: var(--text);
+      font-weight: 100;
+      font-size: clamp(2rem, 4.2vw, 3.5rem);
+      white-space: nowrap;
+      overflow: hidden;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .right {
+    position: relative;
+    width: clamp(15rem, 28vw, 28rem);
+    height: clamp(15rem, 28vw, 28rem);
+    border: 2px solid var(--accent);
+    //border-radius: 20px;
+    display: inline-block;
+
+    @include breakpoints.width(sm) {
+      width: 12em;
+      height: 12em;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -40%;
+      width: clamp(15em, 28vw, 28em);
+
+      @include breakpoints.width(sm) {
+        width: 12em;
+      }
+    }
+  }
+}

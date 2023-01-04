@@ -1,0 +1,49 @@
+@use "styles/breakpoints";
+
+.about {
+  width: 100%;
+  background: var(--dark-bg2);
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  .content {
+    max-width: 90em;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    width: 100%;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+
+    @include breakpoints.width(md) {
+      flex-direction: column;
+    }
+
+    .left {
+      flex: 1;
+
+      @include breakpoints.width(md) {
+        margin-right: 0;
+      }
+
+      p {
+        font-size: 1rem;
+        color: var(--text2);
+        white-space: pre-line;
+      }
+    }
+
+    .right {
+      flex: 1;
+      max-width: 500px;
+      max-height: 500px;
+
+      @include breakpoints.width(md) {
+        margin-top: 5em;
+      }
+    }
+
+  }
+}

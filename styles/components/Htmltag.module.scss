@@ -1,0 +1,16 @@
+.tag {
+  &:before, &:after {
+    color: var(--text-tag);
+    font-family: var(--font-cursive);
+    font-size: 1.2rem;
+    margin-left: -0.75em;
+  }
+
+  &::before {
+    content: attr(before);
+  }
+
+  &::after {
+    content: attr(after);
+  }
+}
