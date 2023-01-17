@@ -1,7 +1,7 @@
 module.exports = {
     siteUrl: "http://localhost:3000",
     seo: {
-        title: "REAZN - Portfolio 1",
+        title: "REAZN - Portfolio",
         description: "Personal portfolio of REAZN, a Front-end web developer and designer.",
         image: "og.png",
     },
@@ -13,7 +13,7 @@ module.exports = {
         codepen: "REAZN",
         number: "+44 0123456789",
     },
-    about: "I'm reazn, a front-end web developer and designer in Blackpool, UK. I am passionate about creating websites, animations, and unique user experiences while pushing the boundaries of design.\n\n I have a keen eye for detail, am interested in the whole front-end spectrum, and working on exciting projects with ambitious people.",
+    about: "Hi. I'm reazn 👋, a front-end web developer and designer in the UK. I am passionate about creating websites, animations, and unique user experiences while pushing the boundaries of design.\n\n I have a keen eye for detail, am interested in the whole front-end spectrum, and working on exciting projects with ambitious people.",
     experiments: [
         { title: "Gradient", url: "https://codepen.io/REAZN/pen/ZEKMgBV", image: "gradient.gif" },
         { title: "Shadow Animation", url: "https://codepen.io/REAZN/pen/KKXoKaP", image: "shadowanimation.gif" },
@@ -29,7 +29,7 @@ module.exports = {
             description: "A simple rock paper scissors game created in React, utilising sockets for multiplayer sessions joinable via codes.",
             technologies: ["Node.js", "React", "Sass", "Socket.IO"],
             image: "rps.png",
-            demo: "https://reazn.me/rps/",
+            demo: "https://reazn.dev/rps/",
             github: "https://github.com/REAZN/rock-paper-scissors",
             color: "#171043",
         },
@@ -41,6 +41,23 @@ module.exports = {
             demo: "https://reazn.me/rps/",
             github: "https://github.com/REAZN/rock-paper-scissors",
             color: "#111018",
+        },
+        {
+            title: "Em'z",
+            description: "Program Butler is a new way of downloading programs; it serves as a showcase of all of the most popular apps. Utilising Winget, Program Butler allows for seamless app downloading.",
+            technologies: ["Node.js", "Astro", "Tailwind"],
+            image: "emz.png",
+            demo: "https://emzsalon.co.uk/",
+            github: "https://github.com/REAZN/emz",
+            color: "#E3B8B5",
+        },
+        {
+            title: "Smokes Servers",
+            description: "Program Butler is a new way of downloading programs; it serves as a showcase of all of the most popular apps. Utilising Winget, Program Butler allows for seamless app downloading.",
+            technologies: ["Node.js", "Vue", "Tailwind", "Laravel"],
+            image: "ss.png",
+            demo: "https://smokesservers.com/",
+            color: "#f4cf40",
         },
     ]
 }

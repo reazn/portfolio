@@ -41,7 +41,9 @@ export default function Projects() {
                                     <Button icon={<LinkIcon fill="var(--accent)" />} href={project.demo}>
                                         Demo
                                     </Button>
-                                    <a className={styles["github"]} href={project.github}>GitHub</a>
+                                    {project.github && (
+                                        <a className={styles["github"]} href={project.github}>GitHub</a>
+                                    )}
                                 </div>
                             </div>
                         </motion.li>

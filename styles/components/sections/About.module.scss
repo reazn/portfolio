@@ -24,14 +24,15 @@
     .left {
       flex: 1;
 
-      @include breakpoints.width(md) {
-        margin-right: 0;
-      }
-
       p {
         font-size: 1rem;
         color: var(--text2);
         white-space: pre-line;
+        margin-right: 5em;
+
+        @include breakpoints.width(md) {
+          margin-right: 0;
+        }
       }
     }
 
@@ -44,6 +45,5 @@
         margin-top: 5em;
       }
     }
-
   }
 }

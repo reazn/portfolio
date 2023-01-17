@@ -21,9 +21,7 @@ export default function About() {
                         }}
                     >
                     <HtmlTag tag="p">
-                        <p>
-                            {config.about}
-                        </p>
+                        <p>{config.about}</p>
                     </HtmlTag>
                     <motion.div
                         initial="hidden"
