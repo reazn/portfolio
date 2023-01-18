@@ -17,3 +17,4 @@ export { default as GitHub } from "./icons/social/GitHub";
 export { default as Twitter } from "./icons/social/Twitter";
 export { default as CodePen } from "./icons/social/CodePen";
 export { default as LinkedIn } from "./icons/social/LinkedIn";
+export { default as Discord } from "./icons/social/Discord";

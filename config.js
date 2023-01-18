@@ -11,6 +11,7 @@ module.exports = {
         github: "REAZN",
         linkedin: "lewisthompson-",
         codepen: "REAZN",
+        discord: "165514073776062464",
         number: "+44 0123456789",
     },
     about: "Hi. I'm reazn 👋, a front-end web developer and designer. I am passionate about creating websites, animations, and unique user experiences while pushing the boundaries of design.\n\n I have a keen eye for detail, am interested in the whole front-end spectrum, and working on exciting projects with ambitious people.",
@@ -61,7 +62,7 @@ module.exports = {
         },
         {
             title: "Program Butler",
-            description: "Program Butler is a new way of downloading programs; it serves as a showcase of all of the most popular apps. Utilising Winget, Program Butler allows for seamless app downloading.",
+            description: "Program Butler is a new way of downloading programs; it serves as a showcase of all of the most popular apps. Utilising Winget, Program Butler allows for seamless bulk app downloading and installation.",
             technologies: ["Node.js", "React", "Tailwind"],
             image: "pb.png",
             // demo: "https://reazn.me/rps/",

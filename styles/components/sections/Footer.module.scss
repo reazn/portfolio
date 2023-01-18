@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  height: 30em;
+  height: 45em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,12 @@
 
   svg {
     width: 15em;
-    margin-bottom: 2em;
+  }
+
+  .description {
+    color: var(--text2);
+    max-width: 35em;
+    text-align: center;
   }
 
   .social {
@@ -24,13 +29,15 @@
     display: flex;
     padding: 0;
     position: relative;
+    margin-bottom: 2em;
+    margin-top: 2em;
 
     li {
       a {
         display: block;
         padding: 0.5em;
         margin: 0.5em;
-        height: 3em;
+        height: fit-content;
         transition: transform 250ms;
 
         &:focus-visible,
@@ -50,8 +57,8 @@
       }
 
       svg {
-        width: 2em;
-        height: 2em;
+        width: 1.6em;
+        height: 1.6em;
         margin: 0;
       }
     }
@@ -65,5 +72,3 @@
     bottom: 1em;
   }
 }
-
-
