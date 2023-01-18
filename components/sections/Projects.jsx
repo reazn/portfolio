@@ -38,9 +38,11 @@ export default function Projects() {
                                     ))}
                                 </div>
                                 <div className={styles["links"]}>
-                                    <Button icon={<LinkIcon fill="var(--accent)" />} href={project.demo}>
-                                        Demo
-                                    </Button>
+                                    {project.demo && (
+                                        <Button icon={<LinkIcon fill="var(--accent)" />} href={project.demo}>
+                                            Demo
+                                        </Button>
+                                    )}
                                     {project.github && (
                                         <a className={styles["github"]} href={project.github}>GitHub</a>
                                     )}
