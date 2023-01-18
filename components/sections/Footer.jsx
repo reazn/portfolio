@@ -6,6 +6,7 @@ export default function Footer() {
     return (
         <footer id="section-contact" className={styles["footer"]}>
             <Title text="Get In Touch">Get In Touch</Title>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <p className={styles["description"]}>Feel free to contact me via any of the methods below, i'm always interested in speaking with like-minded people.</p>
             <ul className={styles["social"]}>
                 <li><a href={`https://github.com/${config.social.github}`} target="_blank" rel="noreferrer"><GitHub fill="var(--text)"/></a></li>

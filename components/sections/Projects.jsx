@@ -8,6 +8,7 @@ export default function Projects() {
     return (
         <section id="section-projects" className={styles["projects"]}>
             <div className={styles["content"]}>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <Title>What I've Built</Title>
                 <ul>
                     {config.projects.map((project, index) => (
