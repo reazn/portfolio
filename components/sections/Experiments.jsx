@@ -12,8 +12,7 @@ export default function Experiments() {
     return (
         <section id="section-experiments" className={styles["experiments"]}>
             <div className={styles["content"]}>
-                <Title text="Experiments & Open Source" />
-
+                <Title>Experiments & Open Source</Title>
                 <ul className={styles["cards"]}>
                     {config.experiments.slice(0, showMore ? config.experiments.length : 3)
                         .map((experiment, index) => (

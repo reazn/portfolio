@@ -8,7 +8,7 @@ export default function Projects() {
     return (
         <section id="section-projects" className={styles["projects"]}>
             <div className={styles["content"]}>
-                <Title text="Projects" />
+                <Title>What I've Built</Title>
                 <ul>
                     {config.projects.map((project, index) => (
                         <motion.li key={project.title} className={styles["project"]}
@@ -22,8 +22,10 @@ export default function Projects() {
                            }}
                         >
                             <div className={styles["image-container"]}>
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src={`/images/projects/${project.image}`} alt={"project graphic"} />
+                                <a href={project.demo} target="_blank" rel="noreferrer">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img src={`/images/projects/${project.image}`} alt={`Graphic for the ${project.title} project`} />
+                                </a>
                             </div>
                             <div className={styles["info"]}>
                                 <HtmlTag tag="h3" style={{marginBottom: "-2.5em"}}>
@@ -44,7 +46,7 @@ export default function Projects() {
                                         </Button>
                                     )}
                                     {project.github && (
-                                        <a className={styles["github"]} href={project.github}>GitHub</a>
+                                        <a className={styles["github"]} href={project.github} target="_blank" rel="noreferrer">GitHub</a>
                                     )}
                                 </div>
                             </div>

@@ -1,6 +1,7 @@
 import styles from "styles/components/sections/About.module.scss";
 import { Button, Title, HtmlTag, Sphere, LinkIcon } from "components";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import config from "config";
 
 export default function About() {
@@ -9,7 +10,7 @@ export default function About() {
         <section id="section-about" className={styles["about"]}>
             <div className={styles["content"]}>
                 <div className={styles["left"]}>
-                    <Title text="About Me" />
+                    <Title>A Bit About Me</Title>
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -33,9 +34,15 @@ export default function About() {
                             hidden: { opacity: 0, y: "5%" }
                         }}
                     >
-                        <Button icon={<LinkIcon fill="var(--accent)" />} href={"/cv"} style={{ marginTop: "1em" }}>
-                            Curriculum Vitae
-                        </Button>
+                        <div className={styles["links"]}>
+                            <Button icon={<LinkIcon fill="var(--accent)" />} href={"/cv"}>
+                                Curriculum Vitae
+                            </Button>
+                            <Link to="section-contact" offset={-100} smooth={true} duration={700}>
+                                <a className={styles["contact"]} href={""}>Get in touch</a>
+                            </Link>
+                        </div>
+
                     </motion.div>
 
                     </motion.div>

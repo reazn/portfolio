@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Nav() {
 
-    const links = ["Home", "About", "Projects", "Experiments"];
+    const links = ["About", "Projects", "Experiments", "Contact"];
 
     return (
         <header className={styles["nav"]}>
