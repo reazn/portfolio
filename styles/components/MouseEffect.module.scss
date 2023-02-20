@@ -1,0 +1,43 @@
+
+.blur {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  //transform: translate(-50%, -50%);
+
+  backdrop-filter: blur(200px);
+  //background: white;
+}
+.mouse {
+  position: fixed;
+  //z-index: 0;
+  transform: translate(-50%, -50%);
+
+  .sphere {
+    position: relative;
+    width: 30vmax;
+    height: 30vmax;
+    z-index: -1;
+    background: linear-gradient(to right, #c52d84, #5555ae);
+    filter: grayscale(40%);
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: rotate 20s infinite;
+  }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+      scale: 1 1.1;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
