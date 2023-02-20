@@ -1,6 +1,7 @@
 @use "styles/breakpoints";
 
 .hero {
+  position: relative;
   width: 100%;
   max-width: 100em;
   height: 100vh;

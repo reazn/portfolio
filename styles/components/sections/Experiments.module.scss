@@ -1,8 +1,10 @@
 @use "styles/breakpoints";
 
 .experiments {
+  position: relative;
   width: 100%;
-  background: var(--dark-bg2);
+  background: rgba(var(--dark-bg2), 0.6);
+  backdrop-filter: blur(200px);
   padding-top: 5em;
   padding-bottom: 5em;
 

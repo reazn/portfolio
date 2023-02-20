@@ -3,13 +3,7 @@ export { default as Title } from "./Title";
 export { default as Sphere } from "./Sphere";
 export { default as Button } from "./Button";
 export { default as HtmlTag } from "./HtmlTag";
-
-export { default as Nav } from "./sections/Nav";
-export { default as Hero } from "./sections/Hero";
-export { default as About } from "./sections/About";
-export { default as Projects } from "./sections/Projects";
-export { default as Experiments } from "./sections/Experiments";
-export { default as Footer } from "./sections/Footer";
+export { default as MouseEffect } from "./MouseEffect";
 
 export { default as LinkIcon } from "./icons/Link";
 export { default as Signature } from "./icons/Signature";
