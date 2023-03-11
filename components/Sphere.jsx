@@ -21,7 +21,12 @@ const tech = [
     { name: "Tailwind", image: "tailwind.png" },
     { name: "Vue", image: "vue.png" },
     { name: "XD", image: "xd.png" },
-    // TODO next, astro, prisma
+    { name: "Next", image: "next.png" },
+    { name: "Astro", image: "astro.png" },
+    { name: "Prisma", image: "prisma.png" },
+    { name: "TypeScript", image: "typescript.png" },
+    { name: "Redis", image: "redis.png" },
+    { name: "Docker", image: "docker.png" },
 ]
 
 export default function Sphere({ style }) {
